@@ -39,11 +39,11 @@ class SkillController extends Controller
         return redirect()->route("skill");
     }
 
-    public function create(Request $request){
+    public function create(){
         return view("backoffice.skill.create");
     }
 
-    public function store (Request $request){
+    public function store(Request $request){
         $skill = new Skill;
         $skill->nom = $request->nom;
         $skill->pourcentage = $request->pourcentage;

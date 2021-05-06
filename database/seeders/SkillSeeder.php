@@ -16,37 +16,37 @@ class SkillSeeder extends Seeder
     {
         DB::table("skill")->insert([
             "nom"=>"HTML",
-            "pourcentage"=>"100",
+            "pourcentage"=>100,
             "created_at"=>now()
         ]);
 
         DB::table("skill")->insert([
             "nom"=>"CSS",
-            "pourcentage"=>"90",
+            "pourcentage"=>90,
             "created_at"=>now()
         ]);
 
         DB::table("skill")->insert([
             "nom"=>"JAVASCRIPT",
-            "pourcentage"=>"75",
+            "pourcentage"=>75,
             "created_at"=>now()
         ]);
 
         DB::table("skill")->insert([
             "nom"=>"PHP",
-            "pourcentage"=>"80",
+            "pourcentage"=>80,
             "created_at"=>now()
         ]);
 
         DB::table("skill")->insert([
             "nom"=>"WORDPRESS/CMS",
-            "pourcentage"=>"90",
+            "pourcentage"=>90,
             "created_at"=>now()
         ]);
 
         DB::table("skill")->insert([
             "nom"=>"PHOTOSHOP",
-            "pourcentage"=>"55",
+            "pourcentage"=>55,
             "created_at"=>now()
         ]);
     }
