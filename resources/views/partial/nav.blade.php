@@ -23,7 +23,7 @@
 
 
 <!-- ======= Header ======= -->
-<header id="header">
+<header id="header bg-dark">
     <div class="d-flex flex-column">
 
       <div class="profile">
