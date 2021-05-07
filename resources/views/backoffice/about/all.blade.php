@@ -5,8 +5,8 @@
 
     <section class="container mr-5">
         
-        <h1>tableau de amine</h1>
-        <a class="btn btn-success text-white" href="/bibliotheque/create">Create</a>
+        <h1>tableau de About</h1>
+        <a class="btn btn-secondary text-white" href="/about/create">Create</a>
         <table class="table">
             <thead>
               <tr>
@@ -18,15 +18,15 @@
               </tr>
             </thead>
             <tbody>
-                @foreach ($bibliotheque as $bibliotheque)
+                @foreach ($about as $about)
                     <tr>
-                        <th scope="row">{{ $bibliotheque->id }}</th>
-                        <td>{{ $bibliotheque->nom }}</td>
-                        <td>{{ $bibliotheque->address }}</td>
-                        <td>{{ $bibliotheque->phone }}</td>
+                        <th scope="row">{{ $about->id }}</th>
+                        <td>{{ $about->nom }}</td>
+                        <td>{{ $about->address }}</td>
+                        <td>{{ $about->phone }}</td>
                         <td class="d-flex">
-                            <a class="btn btn-primary text-white" href="/bibliotheque/{{ $bibliotheque->id }}/edit">Edit</a>
-                            <form action="/bibliotheque/{{ $bibliotheque->id }}/delete" method="POST">
+                            <a class="btn btn-primary text-white" href="/about/{{ $about->id }}/edit">Edit</a>
+                            <form action="/about/{{ $about->id }}/delete" method="POST">
                                 @csrf
                                 <button class="btn btn-danger text-white" type="submit">Delete</button>
                             </form>

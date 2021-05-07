@@ -3,20 +3,20 @@
 @section('content')
     <div class="container">
 
-      <h2>edit bibliotheque</h2>
-      <form method="POST" action="/bibliotheque/{{ $bibliotheque->id }}/update">
+      <h2>edit about</h2>
+      <form method="POST" action="/about/{{ $about->id }}/update">
           @csrf
           <div class="mb-3">
             <label  class="form-label">nom</label>
-            <input type="text" class="form-control" value="{{ $bibliotheque->nom }}" name="nom">
+            <input type="text" class="form-control" value="{{ $about->nom }}" name="nom">
           </div>
           <div class="mb-3">
             <label class="form-label">address</label>
-            <input type="text" class="form-control" value="{{ $bibliotheque->address }}" name="address">
+            <input type="text" class="form-control" value="{{ $about->address }}" name="address">
           </div>
           <div class="mb-3">
             <label class="form-label">phone</label>
-            <input type="text" class="form-control" value="{{ $bibliotheque->phone }}" name="phone">
+            <input type="text" class="form-control" value="{{ $about->phone }}" name="phone">
           </div>
           <button type="submit" class="btn btn-primary text-white">Submit</button>
       </form>

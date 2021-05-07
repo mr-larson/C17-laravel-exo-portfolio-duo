@@ -6,7 +6,7 @@
     <section class="container mr-5">
         
         <h1>tableau de livre</h1>
-        <a class="btn btn-success text-white" href="/livre/create">Create</a>
+        <a class="btn btn-secondary text-white" href="/livre/create">Create</a>
         <table class="table">
             <thead>
               <tr>

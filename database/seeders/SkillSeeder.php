@@ -19,5 +19,35 @@ class SkillSeeder extends Seeder
             "chiffre"=>100,
             "created_at"=>now()
         ]);  
+
+        DB::table("skills")->insert([
+            "nom"=>"CSS",
+            "chiffre"=>90,
+            "created_at"=>now()
+        ]);  
+
+        DB::table("skills")->insert([
+            "nom"=>"JAVASCRIPT",
+            "chiffre"=>75,
+            "created_at"=>now()
+        ]); 
+        
+        DB::table("skills")->insert([
+            "nom"=>"PHP",
+            "chiffre"=>80,
+            "created_at"=>now()
+        ]);  
+
+        DB::table("skills")->insert([
+            "nom"=>"Wordpress/cms",
+            "chiffre"=>90,
+            "created_at"=>now()
+        ]);  
+
+        DB::table("skills")->insert([
+            "nom"=>"PHOTOSHOP",
+            "chiffre"=>55,
+            "created_at"=>now()
+        ]);  
     }
 }

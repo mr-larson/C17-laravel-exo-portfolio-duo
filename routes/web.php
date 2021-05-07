@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BibliothequeController;
 use App\Http\Controllers\FactController;
 use App\Http\Controllers\LivreController;
@@ -51,24 +52,24 @@ Route::get("user/create", [UserController::class, "create"]);
 Route::post("/user/store", [UserController::class, "store"]);
 
 
-//BIBLIOTHEQUE
+//ABOUT
 //ALL
-Route::get('/bibliotheque', [BibliothequeController::class, "index"])->name("bibliotheque");
+Route::get('/about', [AboutController::class, "index"])->name("about");
 
 //DELETE
-Route::post('/bibliotheque/{id}/delete', [BibliothequeController::class, "destroy"]);
+Route::post('/about/{id}/delete', [AboutController::class, "destroy"]);
 
 //EDIT
-Route::get("/bibliotheque/{id}/edit",[BibliothequeController::class, "edit"]);
+Route::get("/about/{id}/edit",[AboutController::class, "edit"]);
 
 //UPDATE
-Route::post("/bibliotheque/{id}/update",[BibliothequeController::class, "update"]);
+Route::post("/about/{id}/update",[AboutController::class, "update"]);
 
 //CREATE
-Route::get("bibliotheque/create", [BibliothequeController::class, "create"]);
+Route::get("about/create", [AboutController::class, "create"]);
 
 //STORE
-Route::post("/bibliotheque/store", [BibliothequeController::class, "store"]);
+Route::post("/about/store", [AboutController::class, "store"]);
 
 
 //LIVRE

@@ -32,7 +32,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
-<body>
+<body class="h-100">
     @yield('content')
     <script src="{{ asset("js/app.js") }}"></script>
 </body>

@@ -4,8 +4,8 @@
   
     <div class="container">
 
-      <h2>edit bibliotheque</h2>
-      <form method="POST" action="/bibliotheque/store">
+      <h2>edit about</h2>
+      <form method="POST" action="/about/store">
           @csrf
           <div class="mb-3">
             <label  class="form-label">nom</label>

@@ -18,7 +18,7 @@
         <nav class="nav-menu">
             <ul>
                 <li class="active"><a href={{ route('home') }}><i class="bx bx-home"></i> <span>Home</span></a></li>
-                <li><a href={{ route('bibliotheque') }}><i class="bx bx-file-blank"></i> <span>About</span></a></li>
+                <li><a href={{ route('about') }}><i class="bx bx-file-blank"></i> <span>About</span></a></li>
                 <li><a href={{ route('fact') }}><i class="bx bx-user"></i> <span>Fact</span></a></li>
                 <li><a href={{ route('skill') }}><i class="bx bx-envelope"></i> Skill</a></li>
                 <li><a href={{ route('livre') }}><i class="bx bx-book-content"></i> Portfolio</a></li>
