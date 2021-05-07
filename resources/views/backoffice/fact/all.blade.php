@@ -3,7 +3,7 @@
 @section('content')
     @include('partial.nav')
 
-    <section class="container">
+    <section class="container mr-5">
         
         <h1>tableau de fact</h1>
         <a class="btn btn-success text-white" href="/fact/create">Create</a>
@@ -18,7 +18,7 @@
               </tr>
             </thead>
             <tbody>
-                @foreach ($fact as $fact)
+                @foreach ($facts as $fact)
                     <tr>
                         <th scope="row">{{ $fact->id }}</th>
                         <td>{{ $fact->icone }}</td>

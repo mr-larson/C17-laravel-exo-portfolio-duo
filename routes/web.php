@@ -4,6 +4,7 @@ use App\Http\Controllers\BibliothequeController;
 use App\Http\Controllers\FactController;
 use App\Http\Controllers\LivreController;
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\SkillController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -128,3 +129,23 @@ Route::get("fact/create", [FactController::class, "create"]);
 
 //STORE
 Route::post("/fact/store", [FactController::class, "store"]);
+
+
+//SKILL
+//ALL
+Route::get('/skill', [SkillController::class, "index"])->name("skill");
+
+//DELETE
+Route::post('/skill/{id}/delete', [SkillController::class, "destroy"]);
+
+//EDIT
+Route::get("/skill/{id}/edit",[SkillController::class, "edit"]);
+
+//UPDATE
+Route::post("/skill/{id}/update",[SkillController::class, "update"]);
+
+//CREATE
+Route::get("skill/create", [SkillController::class, "create"]);
+
+//STORE
+Route::post("/skill/store", [SkillController::class, "store"]);

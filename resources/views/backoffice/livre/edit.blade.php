@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partial.nav')
+ 
     <div class="container">
 
       <h2>edit livre</h2>

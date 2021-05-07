@@ -3,7 +3,7 @@
 @section('content')
     @include('partial.nav')
 
-    <section class="container">
+    <section class="container mr-5">
         
         <h1>tableau de User</h1>
         <a class="btn btn-success text-white" href="/user/create">Create</a>

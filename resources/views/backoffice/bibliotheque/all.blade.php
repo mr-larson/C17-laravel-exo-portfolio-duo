@@ -3,9 +3,9 @@
 @section('content')
     @include('partial.nav')
 
-    <section class="container">
+    <section class="container mr-5">
         
-        <h1>tableau de bibliotheque</h1>
+        <h1>tableau de amine</h1>
         <a class="btn btn-success text-white" href="/bibliotheque/create">Create</a>
         <table class="table">
             <thead>

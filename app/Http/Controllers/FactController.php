@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 class FactController extends Controller
 {
     public function index(){
-        $fact = Fact::all();
-        $page = "fact";
+        $facts = Fact::all();
+        $page = "facts";
 
-        return view("backoffice.fact.all",compact("fact","page"));       
+        return view("backoffice.fact.all",compact("facts","page"));       
     }
 
 
@@ -25,7 +25,7 @@ class FactController extends Controller
 
     public function edit($id){
         $fact = Fact::find($id);
-        $page = "fact";
+        $page = "facts";
 
         return view("backoffice.fact.edit", compact("fact","page"));       
     }

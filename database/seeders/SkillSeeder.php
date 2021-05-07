@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class FactSeeder extends Seeder
+class SkillSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,10 +14,9 @@ class FactSeeder extends Seeder
      */
     public function run()
     {
-        DB::table("facts")->insert([
-            "icone"=>"HTML",
-            "chiffre"=>"html",
-            "texte"=>"HTML",
+        DB::table("skills")->insert([
+            "nom"=>"HTML",
+            "chiffre"=>100,
             "created_at"=>now()
         ]);  
     }

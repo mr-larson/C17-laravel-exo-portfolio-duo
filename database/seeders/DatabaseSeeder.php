@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         \App\Models\Image::factory(30)->create();
         \App\Models\Bibliotheque::factory(20)->create();
         $this->call(FactSeeder::class);
+        $this->call(SkillSeeder::class);
     }
 }
