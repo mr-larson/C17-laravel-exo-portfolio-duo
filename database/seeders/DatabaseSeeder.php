@@ -13,7 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(SkillSeeder::class); 
-        $this->call(FactSeeder::class);   
+        \App\Models\User::factory(10)->create();
+        \App\Models\Livre::factory(50)->create();
+        \App\Models\Image::factory(30)->create();
+        \App\Models\Bibliotheque::factory(20)->create();
+        $this->call(FactSeeder::class);
     }
 }

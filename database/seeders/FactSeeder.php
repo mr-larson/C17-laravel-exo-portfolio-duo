@@ -14,7 +14,7 @@ class FactSeeder extends Seeder
      */
     public function run()
     {
-        DB::table("skill")->insert([
+        DB::table("fact")->insert([
             "icone"=>"HTML",
             "chiffre"=>"html",
             "texte"=>"HTML",

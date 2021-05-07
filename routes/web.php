@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\BibliothequeController;
 use App\Http\Controllers\FactController;
+use App\Http\Controllers\LivreController;
+use App\Http\Controllers\ImageController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -19,6 +23,11 @@ Route::get('/', function () {
     return view('home', compact("page"));
 })->name("home");
 
+Route::get('/backoffice', function () {
+    $page="backoffice";
+    return view('backoffice', compact("page"));
+})->name("backoffice");
+
 
 
 //user
@@ -26,19 +35,19 @@ Route::get('/', function () {
 Route::get('/user', [UserController::class, "index"])->name("user");
 
 //DELETE
-Route::post('/fact/{id}/delete', [FactController::class, "destroy"]);
+Route::post('/user/{id}/delete', [UserController::class, "destroy"]);
 
 //EDIT
-Route::get("/fact/{id}/edit",[FactController::class, "edit"]);
+Route::get("/user/{id}/edit",[UserController::class, "edit"]);
 
 //UPDATE
-Route::post("/fact/{id}/update",[FactController::class, "update"]);
+Route::post("/user/{id}/update",[UserController::class, "update"]);
 
 //CREATE
-Route::get("fact/create", [FactController::class, "create"]);
+Route::get("user/create", [UserController::class, "create"]);
 
 //STORE
-Route::post("/fact/store", [FactController::class, "store"]);
+Route::post("/user/store", [UserController::class, "store"]);
 
 
 //BIBLIOTHEQUE
@@ -99,3 +108,23 @@ Route::get("image/create", [ImageController::class, "create"]);
 
 //STORE
 Route::post("/image/store", [ImageController::class, "store"]);
+
+
+//Fact
+//ALL
+Route::get('/fact', [FactController::class, "index"])->name("fact");
+
+//DELETE
+Route::post('/fact/{id}/delete', [FactController::class, "destroy"]);
+
+//EDIT
+Route::get("/fact/{id}/edit",[FactController::class, "edit"]);
+
+//UPDATE
+Route::post("/fact/{id}/update",[FactController::class, "update"]);
+
+//CREATE
+Route::get("fact/create", [FactController::class, "create"]);
+
+//STORE
+Route::post("/fact/store", [FactController::class, "store"]);
