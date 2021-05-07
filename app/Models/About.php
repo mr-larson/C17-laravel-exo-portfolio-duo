@@ -12,8 +12,13 @@ class About extends Model
 
     protected $fillable = [
         'id',
-        'nom',
-        'address',
+        'birthday',
+        'website',
         'phone',
+        'city',
+        'age',
+        'degree',
+        'email',
+        "freelance",
     ];
 }

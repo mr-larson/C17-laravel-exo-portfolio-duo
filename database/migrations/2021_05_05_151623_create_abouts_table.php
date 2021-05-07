@@ -22,7 +22,7 @@ class CreateAboutsTable extends Migration
             $table->unsignedInteger("age");
             $table->string("degree");
             $table->string("email");
-            $table->boolean("freelance");
+            $table->string("freelance");
             $table->timestamps();
         });
     }

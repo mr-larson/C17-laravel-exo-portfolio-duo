@@ -33,9 +33,14 @@ class AboutController extends Controller
 
     public function update($id, Request $request){
        $about = About::find($id);
-       $about->nom = $request->nom;
-       $about->address = $request->address;
-       $about->phone = $request->phone;    
+       $about->birthday = $request->birthday;
+       $about->website = $request->website;
+       $about->phone = $request->phone; 
+       $about->city = $request->city; 
+       $about->age = $request->age;  
+       $about->degree = $request->degree;
+       $about->email = $request->email;
+       $about->freelance = $request->freelance;
        $about->updated_at = now();   
 
        $about->save();
