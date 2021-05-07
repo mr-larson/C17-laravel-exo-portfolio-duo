@@ -15,7 +15,7 @@ class AboutSeeder extends Seeder
     public function run()
     {
         DB::table("abouts")->insert([
-            "nom"=>"HTML",
+            "birthday"=>"",
             "address"=>"HTML",
             "phone"=>"HTML",
             "created_at"=>now()
