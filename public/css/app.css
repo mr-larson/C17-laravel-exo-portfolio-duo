@@ -11935,3 +11935,9 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+.welcome{
+  height: 100vh;
+  font-family: url("/fonts/Dancing_Script/static/DancingScript-Bold.ttf")!important ; 
+  
+}

@@ -10,17 +10,17 @@
           <div class="mb-3">
             <label  class="form-label">url</label>
             <select class="custom-select"  name="url">
-              <option value="/img/portfolio/portfolio-1.jpg" {{ $portfolio->url == "portfolio"? "selected":null }} selected>image 1</option> 
-              <option value="/img/portfolio/portfolio-2.jpg" {{ $portfolio->url == "portfolio"? "selected":null }}>image 2</option> 
-              <option value="/img/portfolio/portfolio-3.jpg" {{ $portfolio->url == "portfolio"? "selected":null }}>image 3</option> 
-              <option value="/img/portfolio/portfolio-4.jpg" {{ $portfolio->url == "portfolio"? "selected":null }}>image 4</option> 
-              <option value="/img/portfolio/portfolio-5.jpg" {{ $portfolio->url == "portfolio"? "selected":null }}>image 5</option> 
-              <option value="/img/portfolio/portfolio-6.jpg" {{ $portfolio->url == "portfolio"? "selected":null }}>image 6</option> 
-              <option value="/img/portfolio/portfolio-7.jpg" {{ $portfolio->url == "portfolio"? "selected":null }}>image 7</option> 
-              <option value="/img/portfolio/portfolio-8.jpg" {{ $portfolio->url == "portfolio"? "selected":null }}>image 8</option> 
-              <option value="/img/portfolio/portfolio-9.jpg" {{ $portfolio->url == "portfolio"? "selected":null }}>image 9</option> 
+              <option value="/img/portfolio/portfolio-1.jpg"  selected>image 1</option> 
+              <option value="/img/portfolio/portfolio-2.jpg" >image 2</option> 
+              <option value="/img/portfolio/portfolio-3.jpg" >image 3</option> 
+              <option value="/img/portfolio/portfolio-4.jpg" >image 4</option> 
+              <option value="/img/portfolio/portfolio-5.jpg" >image 5</option> 
+              <option value="/img/portfolio/portfolio-6.jpg" >image 6</option> 
+              <option value="/img/portfolio/portfolio-7.jpg" >image 7</option> 
+              <option value="/img/portfolio/portfolio-8.jpg" >image 8</option> 
+              <option value="/img/portfolio/portfolio-9.jpg" >image 9</option> 
             </select>
-            <img class="col-4 img-thumbnail mt-3" src="/img/portfolio/portfolio-1.jpg" alt="">
+            <img class="col-4 img-thumbnail mt-3" src="{{ asset($portfolio->url) }}" alt="">
           </div>
           <div class="mb-3">
             <label class="form-label">categorie</label>
