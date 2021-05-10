@@ -16,11 +16,11 @@
                 <th scope="col">Action</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="col-6">
                 @foreach ($portfolios as $portfolio)
                     <tr>
                         <th scope="row">{{ $portfolio->id }}</th>
-                        <td><img src={{ $portfolio->url }} alt=""></td>
+                        <td><img class="img-thumbnail col-4" src={{ $portfolio->url }} alt=""></td>
                         <td>{{ $portfolio->categorie }}</td>
                         <td class="d-flex">
                             <a class="btn btn-primary text-white" href="/portfolio/{{ $portfolio->id }}/edit">Edit</a>

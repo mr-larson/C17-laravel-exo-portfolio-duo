@@ -15,55 +15,55 @@ class PortfolioSeeder extends Seeder
     public function run()
     {
         DB::table("portfolios")->insert([
-            "url"=>"/img/portfolio/porfolio-1.jpg",
+            "url"=>"/img/portfolio/portfolio-1.jpg",
             "categorie"=>"app",
             "created_at"=>now()
         ]);
 
         DB::table("portfolios")->insert([
-            "url"=>"/img/portfolio/porfolio-3.jpg",
+            "url"=>"/img/portfolio/portfolio-3.jpg",
             "categorie"=>"app",
             "created_at"=>now()
         ]);
 
         DB::table("portfolios")->insert([
-            "url"=>"/img/portfolio/porfolio-6.jpg",
+            "url"=>"/img/portfolio/portfolio-6.jpg",
             "categorie"=>"app",
             "created_at"=>now()
         ]);
 
         DB::table("portfolios")->insert([
-            "url"=>"/img/portfolio/porfolio-4.jpg",
+            "url"=>"/img/portfolio/portfolio-4.jpg",
             "categorie"=>"card",
             "created_at"=>now()
         ]);
         
         DB::table("portfolios")->insert([
-            "url"=>"/img/portfolio/porfolio-7.jpg",
+            "url"=>"/img/portfolio/portfolio-7.jpg",
             "categorie"=>"card",
             "created_at"=>now()
         ]); 
 
         DB::table("portfolios")->insert([
-            "url"=>"/img/portfolio/porfolio-8.jpg",
+            "url"=>"/img/portfolio/portfolio-8.jpg",
             "categorie"=>"card",
             "created_at"=>now()
         ]); 
 
         DB::table("portfolios")->insert([
-            "url"=>"/img/portfolio/porfolio-2.jpg",
+            "url"=>"/img/portfolio/portfolio-2.jpg",
             "categorie"=>"web",
             "created_at"=>now()
         ]);
 
         DB::table("portfolios")->insert([
-            "url"=>"/img/portfolio/porfolio-5.jpg",
+            "url"=>"/img/portfolio/portfolio-5.jpg",
             "categorie"=>"web",
             "created_at"=>now()
         ]);
 
         DB::table("portfolios")->insert([
-            "url"=>"/img/portfolio/porfolio-9.jpg",
+            "url"=>"/img/portfolio/portfolio-9.jpg",
             "categorie"=>"web",
             "created_at"=>now()
         ]);

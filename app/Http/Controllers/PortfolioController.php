@@ -16,16 +16,16 @@ class PortfolioController extends Controller
 
 
     public function destroy($id){
-        $portfolios = Portfolio::find($id);
-        $portfolios->delete();
+        $portfolio = Portfolio::find($id);
+        $portfolio->delete();
 
         return redirect()->back();       
     }
 
 
     public function edit($id){
-        $portfolios = Portfolio::find($id);
-        $page = "portfolios";
+        $portfolio = Portfolio::find($id);
+        $page = "portfolio";
 
         return view("backoffice.portfolio.edit", compact("portfolio","page"));       
     }
