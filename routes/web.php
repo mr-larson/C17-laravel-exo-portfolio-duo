@@ -1,10 +1,9 @@
 <?php
 
 use App\Http\Controllers\AboutController;
-use App\Http\Controllers\BibliothequeController;
 use App\Http\Controllers\FactController;
-use App\Http\Controllers\LivreController;
-use App\Http\Controllers\ImageController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SkillController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -72,47 +71,47 @@ Route::get("about/create", [AboutController::class, "create"]);
 Route::post("/about/store", [AboutController::class, "store"]);
 
 
-//LIVRE
+//SERVICE
 //ALL
-Route::get('/livre', [LivreController::class, "index"])->name("livre");
+Route::get('/service', [ServiceController::class, "index"])->name("service");
 
 //DELETE
-Route::post('/livre/{id}/delete', [LivreController::class, "destroy"]);
+Route::post('/service/{id}/delete', [ServiceController::class, "destroy"]);
 
 //EDIT
-Route::get("/livre/{id}/edit",[LivreController::class, "edit"]);
+Route::get("/service/{id}/edit",[ServiceController::class, "edit"]);
 
 //UPDATE
-Route::post("/livre/{id}/update",[LivreController::class, "update"]);
+Route::post("/service/{id}/update",[ServiceController::class, "update"]);
 
 //CREATE
-Route::get("livre/create", [LivreController::class, "create"]);
+Route::get("service/create", [ServiceController::class, "create"]);
 
 //STORE
-Route::post("/livre/store", [LivreController::class, "store"]);
+Route::post("/service/store", [ServiceController::class, "store"]);
 
 
-//IMAGE
+//PORTFOLIO
 //ALL
-Route::get('/image', [ImageController::class, "index"])->name("image");
+Route::get('/portfolio', [PortfolioController::class, "index"])->name("portfolio");
 
 //DELETE
-Route::post('/image/{id}/delete', [ImageController::class, "destroy"]);
+Route::post('/portfolio/{id}/delete', [PortfolioController::class, "destroy"]);
 
 //EDIT
-Route::get("/image/{id}/edit",[ImageController::class, "edit"]);
+Route::get("/portfolio/{id}/edit",[PortfolioController::class, "edit"]);
 
 //UPDATE
-Route::post("/image/{id}/update",[ImageController::class, "update"]);
+Route::post("/portfolio/{id}/update",[PortfolioController::class, "update"]);
 
 //CREATE
-Route::get("image/create", [ImageController::class, "create"]);
+Route::get("/portfolio/create", [PortfolioController::class, "create"]);
 
 //STORE
-Route::post("/image/store", [ImageController::class, "store"]);
+Route::post("/portfolio/store", [PortfolioController::class, "store"]);
 
 
-//Fact
+//FACT
 //ALL
 Route::get('/fact', [FactController::class, "index"])->name("fact");
 

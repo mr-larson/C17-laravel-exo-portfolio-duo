@@ -21,8 +21,8 @@
                 <li><a href={{ route('about') }}><i class="bx bx-file-blank"></i> <span>About</span></a></li>
                 <li><a href={{ route('fact') }}><i class="bx bx-user"></i> <span>Fact</span></a></li>
                 <li><a href={{ route('skill') }}><i class="bx bx-envelope"></i> Skill</a></li>
-                <li><a href={{ route('livre') }}><i class="bx bx-book-content"></i> Portfolio</a></li>
-                <li><a href={{ route('image') }}><i class="bx bx-server"></i> Services</a></li>
+                <li><a href={{ route('service') }}><i class="bx bx-book-content"></i> Services</a></li>
+                <li><a href={{ route('portfolio') }}><i class="bx bx-server"></i> portfolio</a></li>
                 <li><a href={{ route('user') }}><i class="bx bx-envelope"></i> Contact</a></li>
             </ul>
         </nav><!-- .nav-menu -->

@@ -5,26 +5,26 @@
 
     <section class="container mr-5">
         
-        <h1>tableau de image</h1>
-        <a class="btn btn-secondary text-white" href="/image/create">Create</a>
+        <h1>tableau de Portfolio</h1>
+        <a class="btn btn-secondary text-white" href="/portfolio/create">Create</a>
         <table class="table">
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Photo</th>
-                <th scope="col">Description</th>
+                <th scope="col">url</th>
+                <th scope="col">categorie</th>
                 <th scope="col">Action</th>
               </tr>
             </thead>
             <tbody>
-                @foreach ($image as $image)
+                @foreach ($portfolios as $portfolio)
                     <tr>
-                        <th scope="row">{{ $image->id }}</th>
-                        <td>{{ $image->photo }}</td>
-                        <td>{{ $image->description }}</td>
+                        <th scope="row">{{ $portfolio->id }}</th>
+                        <td><img src={{ $portfolio->url }} alt=""></td>
+                        <td>{{ $portfolio->categorie }}</td>
                         <td class="d-flex">
-                            <a class="btn btn-primary text-white" href="/image/{{ $image->id }}/edit">Edit</a>
-                            <form action="/image/{{ $image->id }}/delete" method="POST">
+                            <a class="btn btn-primary text-white" href="/portfolio/{{ $portfolio->id }}/edit">Edit</a>
+                            <form action="/portfolio/{{ $portfolio->id }}/delete" method="POST">
                                 @csrf
                                 <button class="btn btn-danger text-white" type="submit">Delete</button>
                             </form>
